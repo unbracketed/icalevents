@@ -108,6 +108,7 @@ class Event:
         ne = Event()
         ne.summary = self.summary
         ne.description = self.description
+        ne.location = self.location
         ne.start = new_start
         
         if self.end:
