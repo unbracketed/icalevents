@@ -145,7 +145,6 @@ def create_event(component, tz=UTC):
     event.description = str(component.get('description'))
     event.all_day = type(component.get('dtstart').dt) is date
     event.location = str(component.get('location'))
-    print('in create_event')
     if component.get('rrule'):
         event.recurring = True
     return event
